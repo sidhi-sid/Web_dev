@@ -1,0 +1,18 @@
+body{
+	background:black;
+	color:grey;
+}
+a{
+	color:white;
+}
+a:hover{
+	color:grey;
+	background:white;
+}
+img{
+	margin-left:-30%;
+	margin-top: 20%;
+}
+hr{
+	color:white;
+}
