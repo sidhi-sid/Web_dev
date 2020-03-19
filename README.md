@@ -1,2 +1,2 @@
-# Webpages
-This repo contains basic webpages, I coded during my learning phases
+# Web_Dev
+This repo contains basic webpages and my first project.
