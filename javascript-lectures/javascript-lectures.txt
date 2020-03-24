@@ -1,0 +1,56 @@
+js is REPL(read,execute,print,loop)
+
+let,const(constant variable),var-for declaring variables
+console.log("")-for printing
+for loops works similar to the one in c++
+typeof-tells type of data//return type is string
+can/cant use semicolons
+
+datatypes/variables
+str_name-""//string
+bool_name-true/false//boolean
+number//floating no is also number
+string//char is also string,can be defined in both single quotes and double quotes
+Number.MAX_SAFE_INTEGER--gives max. no that can be used
+
+objects
+ //properties are defined inside object and nested objects can be created
+let obj_name{
+	a:10;      
+	b:"nm"
+	c:{
+	x:"ssd"
+	}
+}
+console.log(obj.c.x)//to print a property
+obj.l=7894;//new property added to object obj
+delete obj.a//property deleted from obj
+
+function
+function fn_name(x,y,z)
+{
+	return (x+1)
+}
+var takes fn scope not block scope
+let takes block scope
+const takes block scope
+
+equality
+1=="1"//non strict equality operator , type cast is done 
+returns true
+1==="1"//strict equality operator,no type cast is done
+returns false
+
+LHS                     RHS
+{}                       {}
+represents block,represents object
+
+strings,arrays
+--codes
+
+var,let,const
+const objects acts like other objects like property can be added and deleted
+and arrays too/ push and pop can be done
+
+In js,variables are passed by value in functions.
+In case of arrays,values are actually references of values. so it looks like values are passed by reference when they are not.
