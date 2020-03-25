@@ -1,13 +1,24 @@
+
+
 body{
-	background:black;
-	color:grey;
-}
-a{
+	background:grey;
 	color:white;
 }
-a:hover{
+.only{
+	color:lightblue;
+}
+.red{
+
+	
+    
+	height:40px;
+	background-color:black;
+	float:right;
+}
+
+.only:hover{
 	color:grey;
-	background:white;
+	
 }
 img{
 	margin-left:-30%;

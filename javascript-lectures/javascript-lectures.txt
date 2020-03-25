@@ -54,3 +54,55 @@ and arrays too/ push and pop can be done
 
 In js,variables are passed by value in functions.
 In case of arrays,values are actually references of values. so it looks like values are passed by reference when they are not.
+
+IIFE(immediately invoked function expression)
+function myfun(){
+... console.log("hello")
+... }
+ myfun();
+
+ (function (){
+... console.log("hey")
+... }) ()
+
+
+
+Closure scope
+function count(){                           Output
+	var initial=1;
+	function plus(){                          2
+	 console.log(++initial)                   3
+	}
+	return plus;
+}
+
+var c=count;
+c();
+c();
+
+plus fn has closure scope i.e. inner fn gets the local scope of outer fn
+
+Function callstack
+function a(){
+	b();
+}
+function b(){
+	c();
+}
+function c(){
+	console.log("shows callstack")
+}
+
+stack consisting a()--b()--c()
+
+Async programming-setTimeout , setInterval
+setTimeout(callback fn,delay,arguments)//syntax for using this fn
+Fn will be executed once after the delay given
+
+setInterval(callback fn,delay)
+Fn will be executed contionously after delay value
+clearInterval() is used to stop the fn execution and clear the interval value.
+ 
+ eg-
+var a=setInterval(fn-name,100);
+clearInterval(a);
