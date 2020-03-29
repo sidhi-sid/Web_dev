@@ -106,3 +106,4 @@ clearInterval() is used to stop the fn execution and clear the interval value.
  eg-
 var a=setInterval(fn-name,100);
 clearInterval(a);
+
