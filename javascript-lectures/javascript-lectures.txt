@@ -107,3 +107,9 @@ clearInterval() is used to stop the fn execution and clear the interval value.
 var a=setInterval(fn-name,100);
 clearInterval(a);
 
+Libraries for 
+//downloads a file,compresses it and uploads it somewhere else
+1. request
+2.archiver
+3.yazl
+4.axios
