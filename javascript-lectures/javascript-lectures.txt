@@ -116,3 +116,27 @@ Libraries for
 
 Util library
 functions-util.promisify and util.callbackify
+
+for getting time of execution
+new Date.getTime()
+
+
+Async-await hell
+requiring large time to execute multiple tasks
+it can be resolved using 2 methods.(do things parallely)
+1. async function task(){
+	const completed1=task1 ()
+	const completed2=task2 ()
+	const completed3=task3 ()
+
+	await completed1
+	await cpmpleted2
+	await completed3
+}
+task1(),task2(),task3() are async functions consisting of different operation
+2.Promise.all([
+task1 (),
+task2 (),
+task3 ()]).then()
+
+task1,task2,task3 will run parallely in this function
