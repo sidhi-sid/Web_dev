@@ -140,3 +140,23 @@ task2 (),
 task3 ()]).then()
 
 task1,task2,task3 will run parallely in this function
+
+Proto-chain in OOPS
+let a={p:10,q:"abc",r:false};
+let b=Object.create(a);
+let c=Object.create(b);
+
+a.isPrototypeOf(b) =>true  
+//if b is created from a?
+
+b.__proto__.p++ =>11
+
+every string is created from String.prototype,same in case boolean from boolean ,number from no.
+
+a.r.__proto__==String.prototype =>true
+
+String.prototype,Number.prototype n everything is created from Object.prototype
+
+Object.prototype.isPrototypeOf(Boolean.prototype) =>true
+                                          
+
