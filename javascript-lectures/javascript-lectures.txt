@@ -159,4 +159,46 @@ String.prototype,Number.prototype n everything is created from Object.prototype
 
 Object.prototype.isPrototypeOf(Boolean.prototype) =>true
                                           
+Web protocols
 
+TCP/IP ALTERNATIVE - UDP (how to devices are connected )
+HTTP (defines UI,domain,extension)
+DHCP (dynamic host control protocol,allocating IP address to devices over a network )
+FTP (outdated version of HTTP)
+SMTP (simple mail transfer protocol,)
+SSH (secure shell)
+Telnet (low level protocol,raw form transmission)
+
+Web addresses
+
+-Domain names
+human readable web address
+<subdomain>.<domain>.<TLD>
+TLD stands for top level domain(eg-.org,.com,. )
+ICANN provides domain names
+
+-IP addresses
+32 bit,4 wors address(IPv4), uniquely defines a server,a client,a node or a router
+given by IANA to different org.
+IP allows subnets,gateways and private Ips
+
+IP address class
+a.b.c.d
+
+Class{x can be anything between 1 and 254,as 0 and 255 are reserved for local addressing and broadcasting}
+A      0-126   [0xxxxxxx]
+B      128-191 [10xxxxxx]
+C      192-223 [110xxxxx]
+D      224-239 [1110xxxx]
+E      240-254 [1111xxxx]
+
+126 class A addresses ,each having 16.7 million computers connected to net
+
+class B -each having 2 to power 16 
+ 
+-MAC address
+(media access control)
+id unique to a hardware network interface
+not dynamic like IP,fixed for a hardware device
+used by all IEEE 802 network technologies
+eg-wifi card of laptop
