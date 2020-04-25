@@ -202,3 +202,8 @@ id unique to a hardware network interface
 not dynamic like IP,fixed for a hardware device
 used by all IEEE 802 network technologies
 eg-wifi card of laptop
+
+Middlewares
+functions like f(req,res,next){}
+middleware having next() then it passes to next middleware
+and if res.send is used then it doesn't pass to next middleware
