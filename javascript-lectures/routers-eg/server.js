@@ -1,0 +1,6 @@
+const srv=require('express')()
+const teacherroute=require('./routes/teachers')
+const studentroute=require('/routes/students')
+srv.use('/students',studentroute)
+srv.use('/teachers',teacherroute)
+srv.listen(2343)
