@@ -6,6 +6,14 @@ let students=[
     {name:"d1",college:"IIT-D",year:"III"}
 ];
 route.get('/',(req,res)=>res.send(students));
+route.post('/',(req,res)=>{
+    students.push({
+        name:req.body.name,
+        college:req.body.college,
+        year:req.body.year
+    })
+    res.send(students)
+})
 
 route.get('/add',(req,res)=>{
     students.push({
@@ -23,5 +31,5 @@ route.get('/:id',(req,res)=>res.send(students[req.params.id]));
     //}
     //res.send(students[req.params.id])
     //})
-}
+//}
 module.exports=route;
