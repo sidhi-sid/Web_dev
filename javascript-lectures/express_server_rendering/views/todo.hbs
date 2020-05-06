@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/todo" method="POST">
+        <input name="newtodo">
+        <input type="submit">
+    </form>
+    <ul>
+        {{#each todos as |todo|}}
+        <li>{{todo.task}}</li>
+        {{/each}}
+    </ul>
+</body>
+</html>
