@@ -1,0 +1,6 @@
+const express=require('express')
+const srv=express()
+srv.use(express.json())
+srv.use(express.urlencoded({extended:true}))
+srv.set("view engine","hbs")
+srv.listen(4444)
