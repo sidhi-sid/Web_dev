@@ -207,3 +207,24 @@ Middlewares
 functions like f(req,res,next){}
 middleware having next() then it passes to next middleware
 and if res.send is used then it doesn't pass to next middleware
+
+
+Using MySQL
+
+mysql -u root -p
+
+create database mytestdb;
+
+create user myuser identified by 'mypass';
+
+use mytestdb
+
+GRANT ALL PRIVILEGES ON mytestdb.* to myuser;
+
+flush privileges;
+
+ exit
+
+ mysql -u myuser -p
+
+show databases;
