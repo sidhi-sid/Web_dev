@@ -22,6 +22,6 @@ route.post('/add',(req,res)=>{
         res.send(err)
     })
 })
-exports=module.exports{
+exports=module.exports={
     route
-}
+};
