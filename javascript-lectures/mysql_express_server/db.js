@@ -2,10 +2,10 @@ const mysql=require('mysql2')
 const connection=mysql.createConnection({
     host:'localhost',
     user:'myuser',
-    passoword:'mypass',
+    password:'mypass',
     database:'mytestdb'
 })
-function getallusers(){
+function getallpersons(){
     return new Promise(function(resolve,reject){
         connection.query(
             `SELECT * FROM persons`,
@@ -19,4 +19,22 @@ function getallusers(){
         )
     })
 }
-exports=module.exports=
+function addnewperson(name,age,city){
+    return new Promise(function(resolve,reject){
+        connection.query(
+            `INSERT INTO persons (name,age,city) VALUES(?,?,?)`,
+            [name,age,city],
+            function(err,results){
+                if(err){
+                    reject(err)
+                }else{
+                    resolve()
+                }
+            }
+        )
+    })
+}
+exports=module.exports={
+    getallpersons,
+    addnewperson
+}
