@@ -15,9 +15,10 @@ const student=db.define('student',{
         type:datatypes.INTEGER(2),
         allowNull: false,
         defaultValue:-1
-    }
+    } 
 })
 
-db.sync({alter:true})//even if table exists then it gets changed (force can also be used in place of alter) but force deletes the table and then creates it again so use alter as it is non destructive in nature
-.then(()=>console.log("Database synchronised"))
-.catch(console.error)
+module.exports={
+    db,student
+}
+//db.sync({alter:true})even if table exists then it gets changed (force can also be used in place of alter) but force deletes the table and then creates it again so use alter as it is non destructive in nature
