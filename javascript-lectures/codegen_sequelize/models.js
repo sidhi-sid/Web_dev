@@ -1,5 +1,9 @@
-const {DataTypes}=require('sequelize')
-const {db}=require('./connection')
+const sequelize=require('sequelize')
+const DataTypes=sequelize.DataTypes
+const db=new sequelize('sampledb2','sampleuser2','samplepass2',{
+    host:'localhost',
+    dialect:'mysql'
+})
 
 const course=db.define('course',{
     id:{
@@ -44,9 +48,17 @@ const batch=db.define('batch',{
         type:DataTypes.STRING(8),
         primaryKey:true
     },
+    year:DataTypes.INTEGER(4),
     start:DataTypes.DATE,
     end:DataTypes.DATE
 })
 //associations
 batch.belongsTo(course)
 batch.belongsTo(center)
+batch.belongsTo(season)
+
+course.hasMany(batch)
+center.hasMany(batch)
+season.hasMany(batch)
+
+db.sync();
