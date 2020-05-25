@@ -62,3 +62,12 @@ center.hasMany(batch)
 season.hasMany(batch)
 
 db.sync();
+
+module.exports={
+    db,
+    batch,
+    teacher,
+    season,
+    course,
+    center
+}
