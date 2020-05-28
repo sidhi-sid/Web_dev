@@ -9,7 +9,7 @@
     <h1>Generate Batch Code</h1>
     <form action="/batchcode" method="post">
         <b>Center</b>
-        <select>
+        <select name="center">
             {{#each centers as |c|}}
             <option value="{{c.id}}">{{c.name}}</option>
             {{/each}}
@@ -17,7 +17,7 @@
 
         <br>
         <b>Season</b>
-          <select>
+          <select name="season">
             {{#each seasons as |s|}}
             <option value="{{s.id}}">{{s.name}}</option>
             {{/each}}
@@ -25,22 +25,31 @@
 
         <br>
         <b>Course</b>
-          <select>
+          <select name="course">
             {{#each courses as |co|}}
             <option value="{{co.id}}">{{co.name}}</option>
             {{/each}}
         </select>
         <br>
         <b>Year</b>
-          <select>
+          <select name="year">
             {{#each years as |y|}}
             <option value="{{y}}">{{y}}</option>
             {{/each}}
         </select>
         <br>
         <b>Batch No.</b>
-        <input type="number" min="1" max="5">
+        <input name="batchno" type="number" min="1" max="5">
 
+        <b>Start</b>
+        <input name="start" type="date">
+
+        <b>End</b>
+        <input name="end" type="date">
+        <br>
+        <br>
+        <input type="reset">
+        <input type="submit">
     </form>
     
 </body>
