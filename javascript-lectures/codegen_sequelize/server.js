@@ -1,6 +1,6 @@
 const express=require('express')
 const path=require('path')
-const {center,season,course,batch}=require('./db/models')
+const {center,season,course,Batch}=require('./db/models')
 const app=express()
 app.set('view engine','hbs')
 app.set('views',path.resolve(__dirname,'./views'))
@@ -29,7 +29,7 @@ app.post('/batchcode',async(req,res)=>{
     batchcode +=req.body.season
     batchcode +=req.body.batchno
     try{
-        const batch = await batch.create({
+        const batch = await Batch.create({
             code:batchcode,
             year:req.body.year,
             courseId:req.body.course,
@@ -40,10 +40,21 @@ app.post('/batchcode',async(req,res)=>{
         })
        res.send(batch.code)
     }
-    catch{
+    catch(e){
         console.error(e)
     }
     
+})
+app.get('/batches',async(req,res)=>{
+    try{
+        const batches=await Batch.findAll({
+            include:[course,season,center]
+        })
+        res.render('batches',{batches})
+        console.log("IN")
+    }catch(e){
+        console.error(e)
+    }
 })
 module.exports={
     app

@@ -43,7 +43,7 @@ const season=db.define('season',{
         allowNull:false
     },
 })
-const batch=db.define('batch',{
+const Batch=db.define('Batch',{
     code:{
         type:DataTypes.STRING(8),
         primaryKey:true
@@ -53,19 +53,19 @@ const batch=db.define('batch',{
     end:DataTypes.DATE
 })
 //associations
-batch.belongsTo(course)
-batch.belongsTo(center)
-batch.belongsTo(season)
+Batch.belongsTo(course)
+Batch.belongsTo(center)
+Batch.belongsTo(season)
 
-course.hasMany(batch)
-center.hasMany(batch)
-season.hasMany(batch)
+course.hasMany(Batch)
+center.hasMany(Batch)
+season.hasMany(Batch)
 
 db.sync();
 
 module.exports={
     db,
-    batch,
+    Batch,
     teacher,
     season,
     course,
