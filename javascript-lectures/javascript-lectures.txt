@@ -235,3 +235,11 @@ MongoDB
 -collections contains objects
 try localhost:27017 on browser if it shows :It looks like you are trying to access MongoDB over HTTP on the native driver port.
 then MongoDB is working on system
+
+Web Sockets
+library-Socket.io
+generally client sends some request to server.
+Now when server wants to send something to the client or vice-versa then sockets are used.
+Uses piplining
+uses ws protocol like ws://chat.com
+ws itself runs on http protocol
