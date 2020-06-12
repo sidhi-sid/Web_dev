@@ -5,7 +5,9 @@ const socketio=require('socket.io')
 
 const server=http.createServer(app) //creating server
 const io=socketio(server)
-
+io.on('connection',(socket)=>{
+    console.log("Connected with socket id =",socket.id)
+})
 app.use('/',express.static(__dirname+'/public'))
 
 server.listen(3344,()=>{

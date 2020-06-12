@@ -243,3 +243,5 @@ Now when server wants to send something to the client or vice-versa then sockets
 Uses piplining
 uses ws protocol like ws://chat.com
 ws itself runs on http protocol
+
+It is server side library as well as client side library
