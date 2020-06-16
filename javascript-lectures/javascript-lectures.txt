@@ -247,4 +247,8 @@ ws itself runs on http protocol
 It is server side library as well as client side library
 
 Unit Testing
-
+1. install mocha and chai using npm packages
+2. create a folder with name "test"
+3. add test files to the folder
+4. add mocha to the "test:" in place of what's written in front of it in package.json file
+5. use command for running: npm run test
