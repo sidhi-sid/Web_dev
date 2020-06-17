@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "mocha",
-    "cover": "nyc --reporter=html --reporter=text mocha"
+    "start": "node app.js",
+    "cover": "nyc --reporter=html --reporter=lcovonly mocha"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +14,7 @@
     "chai": "^4.2.0",
     "express": "^4.17.1",
     "mocha": "^8.0.1",
-    "nyc": "^15.1.0"
+    "nyc": "^15.1.0",
+    "request": "^2.88.2"
   }
 }

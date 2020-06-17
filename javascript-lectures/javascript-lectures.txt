@@ -247,6 +247,7 @@ ws itself runs on http protocol
 It is server side library as well as client side library
 
 Unit Testing
+{FOR LOGIC}
 1. install mocha and chai using npm packages
 2. create a folder with name "test"
 3. add test files to the folder
@@ -257,3 +258,9 @@ Package:nyc allows code coverage under framework Istanbul
 
 To run coverage:
 run command = npm run cover
+
+{FOR SERVER}
+
+1. create app.js file and remove listen command from server.js and add it to app.js
+2. create file server.test.js in test folder
+3. run command : npm install request

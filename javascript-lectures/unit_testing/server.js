@@ -21,4 +21,4 @@ app.post('/calcfare',(req,res)=>{
 app.get('/rate',(req,res)=>{
     res.send(fareutils.rate)
 })
-app.listen(2222,()=>console.log('server started'))
+exports=module.exports=app
