@@ -252,3 +252,8 @@ Unit Testing
 3. add test files to the folder
 4. add mocha to the "test:" in place of what's written in front of it in package.json file
 5. use command for running: npm run test
+ 
+Package:nyc allows code coverage under framework Istanbul
+
+To run coverage:
+run command = npm run cover
