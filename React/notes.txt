@@ -1,0 +1,16 @@
+ReactJS- UI library
+
+webpages are made of components
+it allows reusability
+
+For creating an app, use command:
+npx create-react-app tictactoe__
+{tictactoe is name of the app}
+
+
+Index.html                               JS(component)
+(div component 
+with id="root")                    app.js(exports a component)
+                                  index.js(imports that component and renders it into index.html)
+
+

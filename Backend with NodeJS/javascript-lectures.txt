@@ -264,3 +264,32 @@ run command = npm run cover
 1. create app.js file and remove listen command from server.js and add it to app.js
 2. create file server.test.js in test folder
 3. run command : npm install request
+
+Deploying
+
+1. Frontend
+2. Frontend+Backend
+3. Backend
+{1-static hosting,html hosting}
+only bandwidth  
+{2,3-server,cloud hosting,VPS(virtual private hosting)}
+cpu+ram+disk+bandwidth
+
+Frontend+Backend
+1. Bare Metal
+requires- static IP,high upload speed,UPS(uninterrupted power supply)
+
+2. Infrastructure(in form of service)
+eg-AWS,GCE(Google cloud engine),digital ocean
+
+3.  Platform(as a service)
+you only provide source code to the service provider
+eg-Heroku
+
+Frontend
+eg-GitHub
+
+
+
+
+
