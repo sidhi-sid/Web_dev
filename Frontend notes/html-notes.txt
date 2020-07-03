@@ -1,0 +1,39 @@
+HTML elements
+1. Sectioning content
+div,article,main,header,footer,section,nav,aside
+2. Typography and flow
+h1-h6,p,span,ul,ol,li,a
+3. Forms
+input,button,textarea,select
+4. Media
+video,audio,img
+
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <article></article>
+        <section>
+            <div></div>
+        </section>
+    </main>
+</body>
+
+span-inline element
+
+in <input> [required] can be used for compulsory input
+Media
+<video src=""> height="" controls</video>
+controls-add controls to video
+autoplay-starts autoplay of video
+
+<audio src=""></audio>
+controls and autoplay can also be added
+
+<img src="" alt="">
+
+container :occupies only the space that is required
+container-fluid:occupies the complete width
+
+

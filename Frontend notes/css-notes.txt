@@ -1,0 +1,103 @@
+for labels
+
+[for="email"]{
+
+}
+
+CSS Layouts
+1. display:block //occupies whole space in a line --allows elements to take full width and represent in form of a stack
+
+2. display:none //hides stuff on html page
+
+3. display:inline-block // adds block properties to inline elements so properties like height can be added using these
+
+Positioning
+by default position is static
+
+1. position:relative
+   allows the user to change the position of element in reference to current position using {top:  } and {left:  }
+
+2. position:absolute
+   hides that element and other elements think that element doesn't exist anymore so that position can be occupied with others
+
+3. bottom:0
+   top:0
+   right:0
+   left:0
+   margin:auto
+   this sets element to the center
+
+4. position:fixed
+   sets according to the viewport in all cases , used in navbars
+
+5. float:left
+   sets elements in a horizontal row and float property removes all that is behind the elements with property float
+   so to remove thsi confusion use {clear:both, with float property}
+
+Sizing
+
+1. percent
+2. em
+3. rem
+4. px
+5. viewport units
+   vh for heights
+   vw for widths
+
+Flexbox
+
+Element behaves like a flexible box or flexbox when it has css display property set to a value of flex.
+When using flexbox,the direct children of the flexbox can be easily arranged,aligned,centered,etc.
+
+flex-direction
+informs flexbox in which it should lay it's children.
+property is set on actual flexbox not on the children.
+default is row
+
+flex-direction: row/row-reverse/column/column reverse
+
+flex-wrap
+no-wrap(default),wrap and reverse-wrap
+
+flex-flow
+way to customize dirn and wrapping(combination of flex-dirn and flex-wrap)
+
+values:row no-wrap(default)
+row wrap
+column wrap
+
+directional axes
+main axis:one that runs in the dirn specified by flex-direction
+cross-axis:one that runs perpendicular to the main axis
+
+justify-content
+determines the distribution of flex children in the flexbox along the main axis
+
+justify-content:flex-start(default)/flex-end/center/space-around/space-between/space-evenly
+
+align-items
+determines distribution of flexbox children in the flexbox along cross axis
+
+align-items:flex-start/flex-end/center/stretch(default)/baseline
+
+order
+set on individual flex items
+determines the order of the flex item in the flexbox
+uses integer values,the lower the no the closer it will be to the start of the main axis
+default(0)
+
+flex
+css shorthand property for flex-grow.flex-shrink and flex-basis properties ,these are set pn flex children 
+
+recommended to use the flex shorthand instead of setting the individual properties, as the browser will set the others intelligently
+
+possible values are non-negative integers,numbers are used to specify the proportion of available space to occupy
+
+align-self
+css property set on an individual flex item
+it determines the alignment of a flex item on the cross axis(flex-start,flex-end,center,stretch,baseline)
+
+align-self is only used to override an individual flex item in a flexbox,whereas align-items is set on the flexbox itself and applies to all children
+
+
+

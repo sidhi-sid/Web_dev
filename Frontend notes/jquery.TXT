@@ -1,0 +1,67 @@
+Document Object Model
+
+DOM is an object that models the state of the HTML document.Every HTML element is available to us for manipulation/access in JS.
+
+Creating new HTML elements:
+document.createElement('tag')
+document.createTextNode('some text')
+
+Add/remove elements:
+document.body.appendChild('some element')
+document.body.insertBefore('some element')
+document.body.removeChild('some element')
+someElement.remove()
+
+3 steps:
+1.create element
+2.modify element
+3.insert element to document
+
+eg-script.js
+let para=document.createElement('p')
+let text=document.createTextNode('some text')
+para.appendChild(text)
+
+para.style.color="red"
+para.style.textTransform="uppercase"
+para.className="some-para";
+
+document.body.appendChild(para)
+
+
+//other ways for styling
+let h1=document.createElement('h1')
+h1.className='awesome-h1'
+h1.id='main-heading'
+
+Getting Elements
+let somediv=document.getElementById('best-div')//best-div is declared in html
+or use document.getElementsByClassName(' ')
+
+Waiting Turns
+DOM elements cannot be manipulated(retrieved,added,removed or styled) until the browser has finished loading the HTML document
+
+document.addEventListener('DOMContentLoaded',function(){
+//add content that needs to be displayed
+})
+
+
+document:
+	When a member returns an object of type document (e.g., the ownerDocument property of an element returns the document to which it belongs), this object is the root document object itself.
+element:
+	element refers to an element or a node of type element returned by a member of the DOM API. Rather than saying, for example, that the document.createElement() method returns an object reference to a node, we just say that this method returns the element that has just been created in the DOM. element objects implement the DOM Element interface and also the more basic Node interface.
+nodeList:
+	A nodeList is an array of elements, like the kind that is returned by the method document.getElementsByTagName(). Items in a nodeList are accessed by index in either of two ways: list.item(1) or list[1]. These two are equivalent. In the first, item() is the single method on the nodeList object. The latter uses the typical array syntax to fetch the second item in the list.
+attribute:
+	When an attribute is returned by a member (e.g., by the createAttribute() method), it is an object reference that exposes a special (albeit small) interface for attributes. Attributes are nodes in the DOM just like elements are.
+namedNodeMap:
+	A namedNodeMap is like an array, but the items are accessed by name or index, though this latter case is merely a convenience for enumeration, as they are in no particular order in the list. A namedNodeMap has an item() method for this purpose, and you can also add and remove items from a namedNodeMap.
+
+jQuery
+
+JS library
+jquery simplifies manipulating the DOM,creating animations,making AJAX requests and handling events
+
+
+
+
