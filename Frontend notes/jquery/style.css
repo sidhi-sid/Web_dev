@@ -1,0 +1,22 @@
+.square {
+    width: 50px;
+    height: 50px;
+}
+
+.big-red {
+    color: red;
+    font-size: 300%;
+}
+
+.container {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 5px;
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+}

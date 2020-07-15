@@ -62,26 +62,6 @@ jQuery
 JS library
 jquery simplifies manipulating the DOM,creating animations,making AJAX requests and handling events
 
-//JS variable
-let mybtn=document.getElementById('best-btn')
-
-//jquery variable
-let $mybtn=$('#best-btn')
-
-Traverse and manipulate elements
--select
--create
--modify
--style
--set or get text
--insert
-
-let $divs=$('div')//select all the divs on the page
-let $divs=$('div.square')//selects only the div with class square on the page
-
-
-
-
 
 
 
