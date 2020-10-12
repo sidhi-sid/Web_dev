@@ -1,0 +1,5 @@
+angular cli- npm install -g @angular/cli 
+
+for creating new project - ng new project_name
+
+for running project - ng serve
