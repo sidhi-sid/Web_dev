@@ -3,3 +3,40 @@ angular cli- npm install -g @angular/cli
 for creating new project - ng new project_name
 
 for running project - ng serve
+
+Typescript
+
+1.Types
+let astring: string;
+let anumber:number;
+let aboolean:boolean;
+let anarray:Array<string>;
+let anything:any;
+
+If type is not defined while declaring but is initialized with some value then type of value is used for that variable.
+
+2.Classes
+//private properties can only be accessed from within the class
+class Car{
+    gears:number;  //public by default
+    private speed:number;
+    constructor(speed:number){
+        this.speed=speed||0;
+    }
+    accelerate():void{
+        this.speed++;  
+    }
+    getSpeed():void{ //way to use private property
+        console.log(this.speed); 
+    }
+    static numberWheels():number{ //it does not depend from which object it is called as it is static
+        return 4; 
+    }
+}
+//create an object from a class
+let car=new Car(5);
+car.accelerate();
+car.getSpeed();
+console.log(Car.numberWheels);
+
+3.Interfaces
